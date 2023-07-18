@@ -1,0 +1,23 @@
+@startuml
+
+title using alt group loop
+
+Alice -> Bob: Auth Req
+
+alt success
+    Bob --> Alice: Auth Accepted
+else some kind of fail
+    Bob --> Alice: Auth Failure
+
+    group My own label [loop attack]
+        Alice -> Log: Log attack start
+        loop 100 times
+            Alice --> Bob: DNS Attack
+        end
+        Alice -> Log: Log attack end
+    end
+
+else other failure
+    Bob --[#red]> Alice: Please repeat
+end
+@enduml

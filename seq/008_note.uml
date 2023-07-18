@@ -1,0 +1,18 @@
+@startuml
+
+title note
+
+Alice -> Bob: hello
+note left: this is a first note
+
+Alice <-- Bob: ok
+note right: this is another note
+
+Bob -> Bob: I am thinking
+note left #red
+    a note
+    can also be defined
+    on several lines
+end note
+
+@enduml

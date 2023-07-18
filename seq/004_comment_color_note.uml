@@ -1,0 +1,27 @@
+@startuml
+
+header HOBIS Channel
+title using participant
+footer HOBIS Channel
+
+' Declare participant
+actor Bob #red
+participant Alice
+participant "I have a really \n long name" as L #99FF99
+
+' Sequence Diagram
+skinparam sequenceMessageAlign right
+skinparam responseMessageBelowArrow true
+autonumber "<b>[000]"
+
+Bob -[#red]> Alice : Auth Req
+Alice -[#blue]> L : Log tran
+note right
+    God will make a way for me\n
+    Who knows ** 2morrow? ** 
+end note
+Bob <[#1F1F1F]-- Alice : //Auth Res//
+
+
+
+@enduml

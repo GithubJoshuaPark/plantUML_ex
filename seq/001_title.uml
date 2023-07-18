@@ -1,0 +1,8 @@
+@startuml
+
+title My first Diagram
+
+eco2100 -> eci0100 : Hello
+eci0100 -> eco2200 : Good morning
+eco2200 --> eco2100 : Bye Bye
+@enduml

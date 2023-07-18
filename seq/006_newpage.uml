@@ -1,0 +1,18 @@
+@startuml
+
+title using newpage
+
+Alice -> Bob : msg1
+Alice -> Bob : msg2
+
+newpage page2
+
+Alice -> Bob: msg3
+Alice -> Bob: msg4
+
+newpage page3
+
+Alice -> Bob : msg5
+Alice -> Bob : msg6
+
+@enduml

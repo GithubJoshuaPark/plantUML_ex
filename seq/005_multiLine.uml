@@ -1,0 +1,16 @@
+@startuml
+
+title participant of which has multi-lines
+
+participant Participant [
+    Title2
+    ----
+    SubTitle4
+]
+
+participant Bob
+
+Participant -> Bob
+Bob -> Bob : This is a signal to self.\n It also demonstrates\n multiline \n test
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+title My second seq Diagram
+
+Alice -> Bob: Authentication Request
+Alice <-- Bob : Authentication Response
+
+Alice -> Bob: Another auth Req
+Alice <-- Bob : Another auth Res
+@enduml

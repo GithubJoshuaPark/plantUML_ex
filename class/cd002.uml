@@ -1,0 +1,29 @@
+@startuml
+
+title Computer
+
+class Computer {
+    -name: string
+    -model: string
+    -mb: MainBoard
+    -c: CPU
+    +toString()
+}
+
+class MainBoard {
+    -name: string
+    -model: string
+    +toString()
+}
+
+class CPU {
+    -name: string
+    -model: string
+    +toString()
+}
+
+Computer <|-- MainBoard
+Computer <|-- CPU
+
+
+@enduml
