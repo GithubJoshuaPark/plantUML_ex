@@ -2,14 +2,6 @@
 
 title Computer
 
-class Computer {
-    -name: string
-    -model: string
-    -mb: MainBoard
-    -c: CPU
-    +toString()
-}
-
 class MainBoard {
     -name: string
     -model: string
@@ -22,8 +14,24 @@ class CPU {
     +toString()
 }
 
-Computer <|-- MainBoard
-Computer <|-- CPU
+class Computer {
+    +mb: MainBoard
+    -c: CPU
+    +toString()
+    +showDetail()
+}
+
+class Student {
+    -name: string
+    -age: int
+    -isHasComputer: boolean
+    -computers[]: Computer[]
+    +toString()
+}
+
+Computer o.. MainBoard : has >
+Computer o.. CPU : has >
+Student "1" o.. "many" Computer : has >
 
 
 @enduml
