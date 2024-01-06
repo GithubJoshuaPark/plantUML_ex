@@ -10,6 +10,11 @@ participant Participant [
 
 participant Bob
 
+' Sequence Diagram
+skinparam sequenceMessageAlign right
+skinparam responseMessageBelowArrow true
+autonumber "<b>[000]"
+
 Participant -> Bob
 Bob -> Bob : This is a signal to self.\n It also demonstrates\n multiline \n test
 

@@ -2,6 +2,11 @@
 
 title note
 
+' Sequence Diagram
+skinparam sequenceMessageAlign right
+skinparam responseMessageBelowArrow true
+autonumber "<b>[000]"
+
 Alice -> Bob: hello
 note left: this is a first note
 
